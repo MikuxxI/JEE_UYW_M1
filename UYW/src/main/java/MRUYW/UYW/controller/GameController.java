@@ -13,14 +13,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import MRUYW.UYW.model.Team;
-import MRUYW.UYW.repo.IGameRepository;
+import MRUYW.UYW.repo.IRessourceRepository;
 
 @Controller
-@RequestMapping("/game")
+@RequestMapping("/Game")
 public class GameController {
 
     @Autowired
-    private IGameRepository repoGame;
+    private IRessourceRepository repoRessource;
 
     @GetMapping
     public String config(){
@@ -40,7 +40,7 @@ public class GameController {
             teams.add(team);
         }
 
-        model.addAttribute("PlayerScoreboard", this.repoGame.findAll());
+        model.addAttribute("Ressources", this.repoRessource.findAll());
         model.addAttribute("Teams",teams);
 
         return "game";

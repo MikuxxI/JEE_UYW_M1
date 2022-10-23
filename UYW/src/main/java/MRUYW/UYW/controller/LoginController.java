@@ -2,7 +2,7 @@ package MRUYW.UYW.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@RequestMapping("/login")
+@RequestMapping("/Login")
 public class LoginController {
     
 }
