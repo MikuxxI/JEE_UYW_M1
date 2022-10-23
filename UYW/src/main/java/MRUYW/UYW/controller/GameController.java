@@ -16,7 +16,7 @@ import MRUYW.UYW.model.Team;
 import MRUYW.UYW.repo.IGameRepository;
 
 @Controller
-@RequestMapping("/Game")
+@RequestMapping("/game")
 public class GameController {
 
     @Autowired
