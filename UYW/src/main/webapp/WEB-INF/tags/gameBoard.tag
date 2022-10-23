@@ -1,5 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
+<%@ attribute name="Ressource" type="java.lang.Object" %>
 
 <div class="board-Game">
     <div class="Game">

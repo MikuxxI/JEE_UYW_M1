@@ -16,7 +16,7 @@ import MRUYW.UYW.model.Team;
 import MRUYW.UYW.repo.IRessourceRepository;
 
 @Controller
-@RequestMapping("/game")
+@RequestMapping("/Game")
 public class GameController {
 
     @Autowired
@@ -40,7 +40,7 @@ public class GameController {
             teams.add(team);
         }
 
-        model.addAttribute("Game", this.repoRessource.findAll());
+        model.addAttribute("Ressources", this.repoRessource.findAll());
         model.addAttribute("Teams",teams);
 
         return "game";

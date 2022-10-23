@@ -15,7 +15,7 @@ import MRUYW.UYW.repo.IRessourceRepository;
 import MRUYW.UYW.request.RessourceRequest;
 
 @Controller
-@RequestMapping("/ressource")
+@RequestMapping("/Ressource")
 public class RessourceController {
 
     /* Accesible uniquement par les admin log via loginController */
