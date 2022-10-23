@@ -15,12 +15,6 @@ import lombok.Setter;
 @Getter @Setter
 public class Ressource {
 
-    enum typeRessource{
-        IMG,
-        TXT,
-        GIF
-    }
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "rsc_id")
@@ -33,10 +27,17 @@ public class Ressource {
     private String uri;
 
     @Column(name = "rsc_quest", length = 200, nullable = false)
-    private String quesion;
+    private String question;
 
     @Column(name = "rsc_type", nullable = false)
-    private typeRessource type;
+    private String type;
 
     
+    public String getFullUri(){
+        return this.uri + this.name;
+    }
+
+    public String getExtensionLessName(){
+        return this.name.split("\\.")[0];
+    } 
 }
